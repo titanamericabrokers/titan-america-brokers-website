@@ -28,13 +28,30 @@
 
 <header class="header">
   <div class="container header__inner">
+
     <a class="brand" href="index.html" aria-label="Titan America Brokers — home">
-      <img src="assets/img/logo.png" alt="Titan America Brokers" onerror="this.nextElementSibling.hidden=false;this.remove()">
-      <span class="brand__text" hidden>Titan America<br>Brokers</span>
+      <img
+        src="assets/img/logo.png"
+        alt="Titan America Brokers"
+        onerror="this.nextElementSibling.hidden=false;this.remove()"
+      >
+      <span class="brand__text" hidden>
+        Titan America<br>Brokers
+      </span>
     </a>
-    <button class="navtoggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
-      <span></span><span></span><span></span>
+
+    <button
+      class="navtoggle"
+      type="button"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+      aria-label="Open menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
+
     <nav class="nav" id="primary-nav" aria-label="Main">
       <a href="index.html">Home</a>
       <a href="auto-transport.html">Auto Transport</a>
@@ -42,11 +59,57 @@
       <a href="freight.html">Freight</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-      <a class="btn btn--primary" href="#dealer-quote">Get a Quote</a>
+
+      <!-- Mobile navigation buttons -->
+      <div class="nav-actions">
+        <a class="btn-verify" href="verification.html">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          Verify Our Credentials
+        </a>
+
+        <a class="btn btn--primary" href="index.html#quote">
+          Get a Quote
+        </a>
+      </div>
     </nav>
-    <a class="btn btn--primary desktop-cta" href="#dealer-quote">Get a Quote</a>
+
+    <!-- Desktop navigation buttons -->
+    <div class="nav-actions desktop-cta">
+      <a class="btn-verify" href="verification.html">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          <path d="m9 12 2 2 4-4"></path>
+        </svg>
+        Verify Our Credentials
+      </a>
+
+      <a class="btn btn--primary" href="index.html#quote">
+        Get a Quote
+      </a>
+    </div>
+
   </div>
 </header>
+
 
 <main>
 
