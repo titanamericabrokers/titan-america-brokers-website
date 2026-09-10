@@ -194,6 +194,24 @@
                 <input id="c-phone" name="phone" type="tel" required autocomplete="tel" placeholder="(555) 555-5555">
               </div>
               <div class="field field--full">
+                <label for="c-topic">Subject</label>
+              
+                <select
+                  id="c-topic"
+                  name="topic"
+                  required
+                  data-subject-source
+                >
+                  <option value="General Inquiry">General Inquiry</option>
+                  <option value="Transport Quote">Transport Quote</option>
+                  <option value="Dealership Services">Dealership Services</option>
+                  <option value="Carrier Inquiry">Carrier Inquiry</option>
+                  <option value="Verification Document Request">
+                    Verification Document Request
+                  </option>
+                </select>
+              </div>
+              <div class="field field--full">
                 <label for="c-message">Message</label>
                 <textarea id="c-message" name="message" required placeholder="Pickup, delivery, vehicle, and timing"></textarea>
               </div>
