@@ -57,6 +57,18 @@ var PHONE_DISPLAY = "(800) 818-6927";
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
 
   document.querySelectorAll("form[data-form]").forEach(initForm);
+  var subjectParam = new URLSearchParams(window.location.search).get("subject");
+  var subjectField = document.querySelector("[data-subject-source]");
+
+   if (subjectParam && subjectField) {
+     var matchingOption = Array.from(subjectField.options).find(function (option) {
+       return option.value === subjectParam;
+     });
+   
+     if (matchingOption) {
+       subjectField.value = subjectParam;
+     }
+   }
 
   function initForm(form) {
     form.setAttribute("novalidate", "novalidate");
